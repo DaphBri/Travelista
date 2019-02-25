@@ -20,6 +20,13 @@ body{
     line-height: 1.5em;
     font-weight: 600;
 }
+.textSmallBlackT{
+    
+    font-size: 18px;
+    color:rgb(49, 47, 41);
+    line-height: 1.5em;
+    font-weight: 600;
+}
 .textSmallWhiteCap{
     letter-spacing: 2px;
     font-size: 14px;
@@ -74,4 +81,18 @@ body{
     text-transform: uppercase;
     font-weight: 500;
     cursor: pointer;
+}
+.buttonWhite{
+    display: inline-block;
+    background: #f9f9ff;
+    padding : 10px 30px;
+    color:rgb(49, 47, 41);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    border:1px solid #eee;
+    cursor: pointer;
+    &:hover{
+        background: rgb(235, 185, 50);
+    }
 }
