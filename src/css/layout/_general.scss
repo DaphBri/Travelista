@@ -67,6 +67,20 @@
                     border-bottom: 1px solid #f8b600;
                     padding-bottom: 20px;
                 }
+                .listingBlock{
+                    padding:20px 0;
+
+                    .listing{
+                        display:flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding:5px 5px;
+                        
+                        .buttonWhite{
+                            font-size: 0.9em;
+                        }
+                    }
+                }
             }
         }
     }
