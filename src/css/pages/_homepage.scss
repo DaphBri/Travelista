@@ -1,0 +1,77 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.textSmallGrey{
+    
+    font-size: 14px;
+    color:rgb(119, 118, 118);
+    line-height: 1.5em;
+}
+.textSmallWhite{
+    
+    font-size: 14px;
+    color:rgb(245, 241, 241);
+    line-height: 1.5em;
+}
+.textSmallWhiteT{
+    
+    font-size: 18px;
+    color:rgb(245, 241, 241);
+    line-height: 1.5em;
+    font-weight: 600;
+}
+.textSmallWhiteCap{
+    letter-spacing: 2px;
+    font-size: 14px;
+    color:rgb(245, 241, 241);
+    text-transform: uppercase;
+}
+.textSmallWhiteCapForm{
+    // letter-spacing: 1px;
+    font-size: 14px;
+    color:rgb(245, 241, 241);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+.textMedium{
+    
+    font-size: 36px;
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.textLarge{
+    
+    font-size: 40px;
+    color:rgb(245, 241, 241);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.buttonYellowH{
+    display: inline-block;
+    background: rgb(235, 185, 50);
+    padding : 10px 30px;
+    color:rgb(245, 241, 241);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    // box-shadow: 1px 1px 7px #000000;
+    // border: 1px solid black;
+    // border-radius: 5px;
+    &:hover{
+        background: rgb(49, 47, 41);
+    }
+}
+.buttonYellow{
+    display: inline-block;
+    background: rgb(235, 185, 50);
+    padding : 10px 30px;
+    color:rgb(245, 241, 241);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
