@@ -11,6 +11,15 @@
 </head>
 
 <body class="pageOne">
+        <div class="navigation">
+                <div class="menu">
+                    <div class="menu-bloc"><a href="#" class="textSmallWhiteCapForm">Home</a></div>
+                    <div class="menu-bloc"><a href="#" class="textSmallWhiteCapForm">Book your holidays</a></div>
+                    <div class="menu-bloc"><a href="#" class="textSmallWhiteCapForm">Packages</a></div>
+                    <div class="menu-bloc"><a href="#" class="textSmallWhiteCapForm">Contact</a></div>
+                  </div>
+
+            </div>
     <!-- banner -->
     <header class="bannerWrapper">
         <div>
@@ -35,12 +44,12 @@
                     <span></span>
                     <span></span>
                 </div>
+                
             </nav>
         </div>
     </header>
-    <section class="homeBlock">
-        <!-- <div class="background" data-image-src="img/hero-bg.jpg"> -->
-        <div class="dim"></div>
+    <section class="homeBlock" >
+        <!-- <div class="paralax-img" data-parallax="scroll" data-image-src="img/hero-bg.jpg" alt="background-image"> -->
         <div class="wrapper">
             <div class="textBlock">
                 <div class="textSmallWhiteCap">AWAY FROM MONOTONOUS LIFE</div>
@@ -51,12 +60,12 @@
             </div>
             <div class="formBlock">
                 <ul class="ulTabs">
-                    <li><a href="#" class="textSmallWhiteCapForm liTab active" data-type="flights">Flights</a></li>
+                    <li class="active"><a href="#" class="textSmallWhiteCapForm liTab" data-type="flights">Flights</a></li>
                     <li><a href="#" class="textSmallWhiteCapForm liTab" data-type="hotels">Hotels</a></li>
                     <li><a href="#" class="textSmallWhiteCapForm liTab" data-type="holidays">Holidays</a></li>
                 </ul>
                 <div class="formWrap">
-                    <form class="inputWrap flights" data-type="flights">
+                    <form class="inputWrap flights show" data-type="flights">
                         <input class="inputStyle" type="text" name="from" placeholder="From">
                         <input class="inputStyle" type="text" name="to" placeholder="To">
                         <input class="inputStyle" type="text" name="start" placeholder="Start">
@@ -160,7 +169,7 @@
                             <option value="19">19</option>
                             <option value="20">20</option>
                         </select>
-                        <div class="buttonYellow submit" type="submit">Search flights</div>
+                        <div class="buttonYellow submit" type="submit">Search hotels</div>
                     </form>
                     <form class="inputWrap holidays" data-type="holidays">
                         <input class="inputStyle" type="text" name="from" placeholder="From">
@@ -213,100 +222,164 @@
                             <option value="19">19</option>
                             <option value="20">20</option>
                         </select>
-                        <div class="buttonYellow submit" type="submit">Search flights</div>
+                        <div class="buttonYellow submit" type="submit">Search holidays</div>
                     </form>
                 </div>
 
             </div>
         </div>
+        <!-- </div> -->
     </section>
     <section class="blockTwo destinations">
         <div class="textBlockTitle Two">
             <div class="textMedium">Popular Destinations</div>
-            <div class="textSmallGrey">We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day.</div>
+            <div class="textSmallGrey">We all live in an age that belongs to the young at heart. Life that is becoming
+                extremely fast, day.</div>
         </div>
         <div class="imgBlockTwo imgWrapper">
             <article class="image mountenRiver">
                 <img src="img/dd1.jpg" alt="picture-mountainRiver-paraguay">
                 <div class="dim">
-                        <a class="buttonYellow" href="#" >$150</a>
+                    <a class="buttonYellow" href="#">$150</a>
                 </div>
                 <div class="textSmallWrap">
-                        <div class="textSmallWhiteT">Mountain River</div>
-                        <div class="textSmallWhite">Paraguay</div>
+                    <div class="textSmallWhiteT">Mountain River</div>
+                    <div class="textSmallWhite">Paraguay</div>
                 </div>
-                
+
             </article>
             <article class="image dreamCity">
                 <img src="img/dd2.jpg" alt="picture-dreamCity-paris">
                 <div class="dim">
-                        <a class="buttonYellow" href="#" >$250</a>
+                    <a class="buttonYellow" href="#">$250</a>
                 </div>
                 <div class="textSmallWrap">
-                        <div class="textSmallWhiteT">Dream City</div>
-                        <div class="textSmallWhite">Paris</div>
+                    <div class="textSmallWhiteT">Dream City</div>
+                    <div class="textSmallWhite">Paris</div>
                 </div>
             </article>
             <article class="image cloudMountain">
                 <img src="img/dd3.jpg" alt="picture-cloudMountain-sri-lanka">
                 <div class="dim">
-                    <a class="buttonYellow" href="#" >$350</a>
+                    <a class="buttonYellow" href="#">$350</a>
                 </div>
                 <div class="textSmallWrap">
-                        <div class="textSmallWhiteT">Cloud Mountain</div>
-                        <div class="textSmallWhite">Sri Lanca</div>
+                    <div class="textSmallWhiteT">Cloud Mountain</div>
+                    <div class="textSmallWhite">Sri Lanca</div>
                 </div>
             </article>
         </div>
     </section>
     <section class="blockThree prices">
-            <div class="paddings">
-                <div class="textBlockTitle Three">
-                        <div class="textMedium">We Provide Affordable Prices</div>
-                        <div class="textSmallGrey">Well educated, intellectual people, especially scientists at all times demonstrate considerably.</div>
-                </div>
-                <div class="rowBlockThree rowWrapper">
-                    <div class="roww cheap">
-                        <div class="textSmallBlackT">Cheap Packages</div>
-                        <div class="listingBlock">
-                            <div class="listing">
-                                    <div class="textSmallGrey">New York</div>
-                                    <div class="buttonWhite">$1500</div>
+        <div class="paddings">
+            <div class="textBlockTitle Three">
+                <div class="textMedium">We Provide Affordable Prices</div>
+                <div class="textSmallGrey">Well educated, intellectual people, especially scientists at all times
+                    demonstrate considerably.</div>
+            </div>
+            <div class="rowBlockThree rowWrapper">
+                <div class="roww cheap">
+                    <div class="textSmallBlackT">Cheap Packages</div>
+                    <div class="listingBlock">
+                        <div class="listing">
+                            <div class="textSmallGrey">New York</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Maldives</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Sri Lanka</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Nepal
                             </div>
-                            <div class="listing">
-                                    <div class="textSmallGrey">Maldives</div>
-                                    <div class="buttonWhite">$1500</div>
-                            </div>
-                            <div class="listing">
-                                    <div class="textSmallGrey">Sri Lanka</div>
-                                    <div class="buttonWhite">$1500</div>
-                            </div>
-                            <div class="listing">
-                                    <div class="textSmallGrey">Nepal
-                                        </div>
-                                    <div class="buttonWhite">$1500</div>
-                            </div>
-                            <div class="listing">
-                                    <div class="textSmallGrey">Thailand</div>
-                                    <div class="buttonWhite">$1500</div>
-                            </div>
-                            <div class="listing">
-                                    <div class="textSmallGrey">Singapore</div>
-                                    <div class="buttonWhite">$1500</div>
-                            </div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Thailand</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Singapore</div>
+                            <div class="buttonWhite">$1500</div>
                         </div>
                     </div>
-
-                    
                 </div>
+                <div class="roww Luxury">
+                    <div class="textSmallBlackT">Cheap Packages</div>
+                    <div class="listingBlock">
+                        <div class="listing">
+                            <div class="textSmallGrey">New York</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Maldives</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Sri Lanka</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Nepal
+                            </div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Thailand</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Singapore</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roww Camping">
+                    <div class="textSmallBlackT">Cheap Packages</div>
+                    <div class="listingBlock">
+                        <div class="listing">
+                            <div class="textSmallGrey">New York</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Maldives</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Sri Lanka</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Nepal
+                            </div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Thailand</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                        <div class="listing">
+                            <div class="textSmallGrey">Singapore</div>
+                            <div class="buttonWhite">$1500</div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
+        </div>
 
     </section>
     <section></section>
 
     <footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
