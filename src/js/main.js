@@ -62,12 +62,8 @@ function switchActiveLi(ev){
     });
 }
 
-//swiper??
-// var swiper = new Swiper('.swiper-container', {
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-//   });
+//swiper
+
 
   var swiper = new Swiper('.swiper-container', {
     spaceBetween: 30,

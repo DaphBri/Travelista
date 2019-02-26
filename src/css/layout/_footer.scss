@@ -1,4 +1,100 @@
-footer{
+footer {
     background: #04091e;
-    padding-top: 100px;
+    padding: 50px 15px 100px;
+
+    .navigationBoxTop {
+            border-bottom: 0.5px solid rgba(119, 118, 118, 0.582);
+            padding-bottom:70px;
+        .twoBoxWrap {
+            .oneBox {
+                .textSmallWhiteT {
+                    text-transform: uppercase;
+                    margin: 70px 0 20px;
+                }
+
+                .textSmallGrey {
+                    cursor: pointer;
+                    display: block;
+                    margin: 10px 0;
+
+                    &:hover {
+                        color: rgb(235, 185, 50);
+                    }
+                }
+            }
+
+            .newsletter {
+                .send-email {
+                    display: flex;
+
+                    input {
+                        height: 40px;
+                        width: 85%;
+                        background: #04091e;
+                        padding-left: 15px;
+                        border: 0.5px solid rgba(119, 118, 118, 0.582);
+                    }
+
+                    .submit {
+                        height: 40px;
+                        width: 40px;
+                        cursor: pointer;
+                        background: rgb(235, 185, 50);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        i {
+                            color: #fff;
+                        }
+                    }
+
+                }
+            }
+
+            .instafeed {
+                .ulTab {
+                    list-style-type: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        width: 25%;
+                        margin-bottom: 20px;
+
+                        img {}
+                    }
+
+                }
+            }
+        }
+    }
+    .navigationBoxBottom{
+        margin-top: 20px;
+        .copySocialWrap{
+            .textSmallGrey{
+                padding: 20px 0;
+                i, span{
+                    color: rgb(235, 185, 50);
+                }
+            }
+            .socialIcons{
+                padding: 20px 0;
+                font-size: 12px;
+                    a {
+                        text-decoration: none;
+                        color: rgb(248, 244, 244);
+                        margin-left: 15px;
+                        @include transitionBase();
+        
+                        &:hover {
+                            color: rgb(235, 185, 50);
+                        }
+                    }
+                
+            }
+        }
+    }
 }
