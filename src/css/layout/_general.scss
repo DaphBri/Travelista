@@ -64,7 +64,7 @@
     width: 100%;
     height: 100%;
     padding: 100px 0;
-    background:url("../../img/price-bg.png") no-repeat center/cover;
+    background:url("../img/price-bg.png") no-repeat center/cover;
     .paddings{
         padding: 0 15px;
         .rowWrapper {
@@ -255,17 +255,16 @@
     .blogsWrapper{
         //width: 100%;
         height: 100%;
-        max-width:50%;
+        max-width:70%;
         .carousele{
             padding-bottom: 72px;
-            width:100%;
-            
-            .blog{
+
+            .blog {
                 padding:20px 0 90px;
                 width:100%;
-                @media screen and (min-width: 800px){
-                    width:50%;
-                }
+                // @media screen and (min-width: 800px){
+                //     width:300px;
+                // }
                 .overflow{
                     overflow: hidden;
                     img {
@@ -308,6 +307,28 @@
                 .active{
                     opacity: 1;
                     background: rgb(235, 185, 50);
+                }
+            }
+        }
+    }
+}
+
+//------------BOOK HOLLIDAY PAGE --------------
+
+.homeBlock{
+    .paralax-img{
+        .wrapper{
+            .holliday{
+                text-align: center;
+                width: 100%;
+                .textSmallWhite{
+                    a{
+                        text-decoration: none;
+                        color:rgb(245, 241, 241);
+                    }
+                    span{
+                        margin:0 10px;
+                    }
                 }
             }
         }

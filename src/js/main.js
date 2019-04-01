@@ -28,9 +28,7 @@ $(window).scroll(function(){
     if (scrolled < bodyTop +100){
         $(".bannerWrapper").removeClass("active");
     }
-    //  else  {
-    //     banner.removeClass("active")
-    // }
+
 })
 
 
