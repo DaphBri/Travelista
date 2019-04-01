@@ -163,54 +163,84 @@
 }
 //section 5
 .blockFive{
-    padding: 120px 0 0;
-    
+    padding: 120px 0 0;    
     background-color: #f9f9ff;
     .swiper-container{
         width: 100%;
         height: 100%;
+        max-width:650px;
+        @media screen and (max-width: 700px){
+            max-width:500px;
+        }
+        //max-width:700px;
         .carousele{
             padding-bottom: 72px;
-        .comment{
-            display: flex;
-            flex-direction: row;
-            padding: 30px 0;
-            //margin: 0 15px;s
-            background: white;
-            .profile{
-                height: 32px;
-                padding-left: 40px;
-            }
-            .profileTextWrap{
-                padding-left:30px;
-                padding-right: 40px;
-                .textSmallBlackT.tFive{
-                    margin: 10px 0 5px;
+            .comment{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                padding: 30px 0;
+                //margin: 0 15px;s
+                background: white;
+
+                &:hover {
+                    .profileTextWrap{
+                        .textSmallBlackT.tFive{
+                            color: rgb(235, 185, 50);
+                        }
+                    }
                 }
-                .stars{
-                    font-size: 0.8em;
-                    .yellow{
-                        color:rgb(235, 185, 50);
+                .profile{
+                    height: 32px;
+                    padding-left: 40px;
+                }
+                .profileTextWrap{
+                    padding-left:30px;
+                    padding-right: 40px;
+                    .textSmallBlackT.tFive{
+                        @include transitionBase();
+                        margin: 10px 0 5px;
+                    }
+                    .stars{
+                        font-size: 0.8em;
+                        .yellow{
+                            color:rgb(235, 185, 50);
+                        }
                     }
                 }
             }
         }
     }
-    }
     .packageWrapper{
-        background: white;
+        background: #fff;
         margin-top:120px;
         padding:0 15px;
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 990px){
+            flex-direction: row;
+        }
         .blockLeft{
             padding:120px 40px 80px;
             text-align: center;
+            @media screen and (min-width: 990px){
+                padding: 15px 40px 80px;
+                text-align: left;
+                width: 50%;
+            }
             .textSmallGrey.tFive{
                 margin:20px 0 40px;
             }
         }
         .blockRight{
+            @media screen and (min-width: 990px){
+                width: 50%;
+            }
             .imageFive{
                 margin: 0 -15px;
+                @media screen and (min-width: 990px){
+                    margin: 0 -15px 0 0;
+                }
                 img{
                     display: block;
                     width: 100%;
@@ -223,12 +253,19 @@
 //section 6
 .blockSix{
     .blogsWrapper{
-        width: 100%;
+        //width: 100%;
         height: 100%;
+        max-width:50%;
         .carousele{
             padding-bottom: 72px;
+            width:100%;
+            
             .blog{
                 padding:20px 0 90px;
+                width:100%;
+                @media screen and (min-width: 800px){
+                    width:50%;
+                }
                 .overflow{
                     overflow: hidden;
                     img {
