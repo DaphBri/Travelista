@@ -88,12 +88,80 @@
 
         <!-- new block here vue -->
         <div id="main" class="bookingsVue">
+
             <div class="wrapperCountries">
                 <!-- <div class="but fr textMedium" data-filter="All" @click="filter()">All</div> -->
                 <div class="but fr textBlue">France</div>
                 <div class="but sp textBlue">Spain</div>
                 <div class="but bel textBlue">Belgium</div>
             </div>
+
+            <div class="wrapperCountryTrips">
+                        
+                <!-- loop -->
+                <div class="trip france">
+                    <div class="selection textSmallBlack">You've chosen : countryName</div>
+                    <div class="textSmallBlack">There are 3 city-trips available there !</div>
+                    <div class="textMedium peopleTitle">How many people will take the trip ?</div>
+                    <select class="passangers" id="passangers">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+
+                    <div class="cart">
+                        <div class="blockBlue">
+                            <div class="textSmallWhiteT">Your cart </div>
+                            <div class="textSmallWhite">"...trips..."</div>
+                        </div>
+                    </div>
+
+                    <div class="flexer">
+                        <!-- inner-LOOP -->
+
+                        <!-- france trip1 -->
+                        <div class="wrapTrip tripOne">
+                            <div class="tripName textSmallBlackT">tripName</div>
+                            <div class="tripPicture">
+                                    <img src="tripPicture" alt="picture-trip">
+                            </div>
+                            <div class="tripUnitPrice textMediumS">tripUnitPrice €<span class="textSmallBlackT"> p/p</span></div>
+                            <div class="buttonBlue">Add to cart</div>
+                        </div>
+                        <!-- END inner-LOOP -->
+
+                         <!-- france trip2 -->
+                         <div class="wrapTrip tripOne">
+                                <div class="tripName textSmallBlackT">Lovers Week-end in Paris</div>
+                                <div class="tripPicture">
+                                        <img src="img/b1.jpg" alt="picture-trip">
+                                </div>
+                                <div class="tripUnitPrice textMediumS">225€ <span class="textSmallBlackT"> p/p</span></div>
+                                <div class="buttonBlue">Add to cart</div>
+                            </div>
+
+                             <!-- france trip3 -->
+                        <div class="wrapTrip tripOne">
+                                <div class="tripName textSmallBlackT">Lovers Week-end in Paris</div>
+                                <div class="tripPicture">
+                                        <img src="img/b1.jpg" alt="picture-trip">
+                                </div>
+                                <div class="tripUnitPrice textMediumS">225€<span class="textSmallBlackT"> p/p</span></div>
+                                <div class="buttonBlue">Add to cart</div>
+                            </div>
+
+                    </div>
+
+                    <div class="total">
+                        <h3 class="textMedium">You'll pay <span class="blue">totalPrice ...€</span></h3>
+                    </div>
+                </div>
+                <!-- end-loop -->
+
+            </div>    
+
             <!-- end div bookingVue  -->
         </div>
 

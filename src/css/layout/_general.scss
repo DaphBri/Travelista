@@ -362,14 +362,72 @@
             cursor: pointer;
         }
     }
+    .wrapperCountryTrips{
+        //border: 1px solid #999;
+        padding: 5px;
+        .trip{
+            margin: 50px 7%;
+            .peopleTitle{
+                margin-top: 50px;
+            }
+            .passangers{
+                border-radius: 5px;
+            }
+            .cart{
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                align-items: flex-end;
+            }
+            .flexer{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                margin: 15px 0 0;
+                @media screen and (max-width: 990px){
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .wrapTrip{
+                    width: 30%;
+                    //border:1px solid #f8b600;
+                    padding:10px 0;
+                    margin: 0 10px;
+                    
+                    @media screen and (max-width: 990px){
+                        width: 50%;
+                    }
+                    .tripName{
+                        height: 60px;
+                    }
+                    .tripPicture{
+                        img{
+                            width:100%;
+                        }
+                    }
+                    .tripUnitPrice{
+                        margin:15px 0;
+                    }
+                }
+            }
+        }
+
+    }
 }
 
-
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
 
 
 //------------PACKAGE PAGE --------------
 
 #package{
+    padding: 100px 15px 0;
     @media screen and (max-width: 1200px) and (min-width: 940px){
         flex-wrap: wrap;
         //max-width:1000px;
@@ -403,7 +461,7 @@
             }
         }
         .cellWrap{
-            padding:15px;
+            padding:20px;
             background: #fff;
             .info-pack{
                 list-style-type: none;
@@ -418,6 +476,7 @@
                 #price{
                     padding:16px 0;
                     align-items: center;
+                    border-bottom: 0px solid rgb(233, 233, 233);
                     .buttonYellow{
                         color:rgb(49, 47, 41);
                         padding: 8px 21px;

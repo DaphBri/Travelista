@@ -1,6 +1,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+// texts:
+
 .textSmallGrey{
     
     font-size: 14px;
@@ -54,6 +57,13 @@ body{
     font-weight: 600;
     margin-bottom: 10px;
 }
+.textMediumS{
+    
+    font-size: 23px;
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 .textLarge{
     
     font-size: 40px;
@@ -62,6 +72,24 @@ body{
     font-weight: 600;
     padding-top: 20px;
 }
+
+.textBlue{
+    
+    font-size: 24px;
+    color:#17a2b8;
+    font-weight: 600;
+    margin-bottom: 10px;
+    @include transitionBase();
+    &:hover{
+        color:#117a8b;
+    }
+}
+.blue{
+    color:#17a2b8; 
+}
+
+// buttons :
+
 .buttonYellowH{
     display: inline-block;
     background: rgb(235, 185, 50);
@@ -134,14 +162,28 @@ body{
         background: rgb(235, 185, 50);
     }
 }
-.textBlue{
-    
-    font-size: 24px;
-    color:#17a2b8;
-    font-weight: 600;
-    margin-bottom: 10px;
+.buttonBlue{
+    display: inline-block;
+    background: #17a2b8;
+    padding : 10px 70px;
+    color:rgb(245, 241, 241);
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
     @include transitionBase();
     &:hover{
-        color:#117a8b;
+        background: #117a8b;
+        //color:rgb(245, 241, 241);
     }
 }
+
+//text-colorblocks:
+.blockBlue{
+    display: inline-block;
+    background: #17a2b8;
+    padding : 10px 15px;
+    color:rgb(245, 241, 241);
+    border-radius: 5px;
+    text-align: left;
+}
+
