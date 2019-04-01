@@ -334,3 +334,99 @@
         }
     }
 }
+
+//section 5 vue
+
+.no-bottom{
+    .textBlockTitle{
+        padding-bottom: 0;
+    }
+    .packageWrapper{
+        .blockLeft{
+            @media screen and (min-width: 990px){
+                padding: 15px 50px 0 8%;
+            }
+        }
+    }   
+}
+.bookingsVue{
+    padding: 60px 15px 0;
+    .wrapperCountries{   
+        width: 315px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        .but{
+            //border:1px solid #f8b600;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+//------------PACKAGE PAGE --------------
+
+#package{
+    @media screen and (max-width: 1200px) and (min-width: 940px){
+        flex-wrap: wrap;
+        //max-width:1000px;
+    }
+    @media screen and (min-width: 1200px){
+        max-width:1200px;
+        flex-wrap: wrap;
+    }
+    .imageFour{
+        width: 100%;
+        max-width: 500px;
+        //padding: 15px;
+        margin: 0 auto 30px;
+        @include transitionBase();
+
+        @media screen and (max-width: 940px) and (min-width: 740px){
+            max-width: 690px;
+        }
+        @media screen and (max-width: 1200px) and (min-width: 940px){
+            max-width: 290px;
+        }
+        @media screen and (min-width: 1200px){
+            max-width: 360px;
+        }
+        &:Hover{
+            box-shadow: 0px 10px 30px 0px rgba(60, 64, 143, 0.2);
+        }
+        .overflow{
+            img{
+                width: 100%;
+            }
+        }
+        .cellWrap{
+            padding:15px;
+            background: #fff;
+            .info-pack{
+                list-style-type: none;
+                padding:0;
+                .cell{
+                    //margin:16px 0;
+                    padding:16px 0;
+                    border-bottom: 1px solid rgb(233, 233, 233);
+                    display: flex;
+                    justify-content: space-between;
+                }
+                #price{
+                    padding:16px 0;
+                    align-items: center;
+                    .buttonYellow{
+                        color:rgb(49, 47, 41);
+                        padding: 8px 21px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}

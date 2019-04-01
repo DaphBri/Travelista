@@ -134,3 +134,14 @@ body{
         background: rgb(235, 185, 50);
     }
 }
+.textBlue{
+    
+    font-size: 24px;
+    color:#17a2b8;
+    font-weight: 600;
+    margin-bottom: 10px;
+    @include transitionBase();
+    &:hover{
+        color:#117a8b;
+    }
+}
