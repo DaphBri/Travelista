@@ -8,16 +8,37 @@ new Vue({
             spain:[],
             belgium:[],
             hideValue:true,
-            popValue:true
+            popValue:true,
+            borderValue:false,
+            selectedValue:[],
+            totalPrice:[]
         }
     },
+    // mettre en fonction @click (add) totalPrice
+    // computed:{
+    //     totalPrice(){
+    //         let total= 0;
+    //         this.hollys.forEach(t =>{t.trips.forEach(b =>{total += b.tripUnitPrice * this.selectedValue 
+    //         })
+    //         })
+    //         return total;
+    //     }
+    // },
     methods:{
+        add(){  
+            this.borderValue = true        
+        },
+
         showBlock(){
             this.hideValue = false
         },
         showSel(){
             this.popValue = false
         },
+        onChange(event) {
+            console.log(event.target.value)
+        },
+
         filter(type) {    
             
             if(type==='France'){
@@ -32,7 +53,11 @@ new Vue({
         }
 
     },
-
+    filters:{
+        currency(valuta) {
+            return valuta + "€";
+        }
+    },
     mounted() {
         axios.get("https://wt-4abc83e5c2056740a9e00a6e0975a49a-0.sandbox.auth0-extend.com/city-trip")
         .then(response => {

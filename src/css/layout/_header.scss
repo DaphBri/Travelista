@@ -162,9 +162,14 @@ body {
             padding: 175px 0 100px;
             display: flex;
             flex-direction: column;
-            @media screen and (min-width: 790px){
+            @media screen and (min-width: 790px) and (max-width:1000px){
                 flex-direction: row;
                 max-width: 1024px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 1000px){
+                flex-direction: row;
+                max-width: 1250px;
                 margin: 0 auto;
             }
             .textBlock {
@@ -179,7 +184,7 @@ body {
             .formBlock {
                 margin: 30px 5% 0;
                 padding: 0 15px;
-
+                max-width: 700px;
                 .ulTabs {
                     list-style-type: none;
                     display: flex;

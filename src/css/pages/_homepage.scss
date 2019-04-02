@@ -71,6 +71,9 @@ body{
     text-transform: uppercase;
     font-weight: 600;
     padding-top: 20px;
+    @media screen and (min-width: 1000px){
+        font-size: 60px;
+    }
 }
 
 .textBlue{
@@ -175,6 +178,16 @@ body{
         background: #117a8b;
         //color:rgb(245, 241, 241);
     }
+}
+.buttonBlueBorder{
+    display: inline-block;
+    background: #117a8b;
+    border: 3px solid #17a2b8;
+    padding : 10px 70px;
+    color:rgb(245, 241, 241);
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;   
 }
 
 //text-colorblocks:

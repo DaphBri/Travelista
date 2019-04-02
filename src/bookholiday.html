@@ -103,8 +103,8 @@
                     <div class="selection textSmallBlack">You've chosen : {{t.countryName}}</div>
                     <div class="textSmallBlack">There are 3 city-trips available there !</div>
                     <div class="textMedium peopleTitle">How many people will take the trip ?</div>
-                    <select class="passangers" id="passangers" @change="showSel()">
-                        <option value="0">0</option>
+                    <select  v-model="selectedValue" class="passangers" @change="showSel(), onChange(event)">
+                        <option disabled value="">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -130,18 +130,18 @@
                                         <img :src="b.tripPicture" alt="picture-trip">
                                 </div>
                                 <div class="tripUnitPrice textMediumS">{{b.tripUnitPrice}}€<span class="textSmallBlackT"> p/p</span></div>
-                                <div class="buttonBlue">Add to cart</div>
+                                <div  class="buttonBlue" :class="{'buttonBlueBorder': borderValue}"  @click="add()">Add to cart</div>
                             </div>
                             <!-- END inner-LOOP -->
                         </div>
                     
                         <div class="total">
-                            <h3 class="textMedium">You'll pay <span class="blue">"totalPrice"</span></h3>
+                            <h3 class="textMedium">You'll pay <span class="blue">{{totalPrice | currency}}</span></h3>
                         </div>
 
                     </div>
                     <!-- en "hider" -->
-                    
+
                    </div>
                 <!-- end-loop -->
             
