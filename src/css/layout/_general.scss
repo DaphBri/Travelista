@@ -373,55 +373,63 @@
             .passangers{
                 border-radius: 5px;
             }
-            .cart{
-                display: flex;
-                flex-direction: column;
-                justify-content: right;
-                align-items: flex-end;
-            }
-            .flexer{
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: row;
-                justify-content: center;
-                margin: 15px 0 0;
-                @media screen and (max-width: 990px){
+            .hiderSelect{
+                //display:none;
+                //display:block;
+
+                .cart{
+                    display: flex;
                     flex-direction: column;
-                    align-items: center;
+                    justify-content: right;
+                    align-items: flex-end;
                 }
-                .wrapTrip{
-                    width: 30%;
-                    //border:1px solid #f8b600;
-                    padding:10px 0;
-                    margin: 0 10px;
-                    
+                .flexer{
+                    display: flex;
+
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 15px 0 0;
                     @media screen and (max-width: 990px){
-                        width: 50%;
+                        flex-direction: column;
+                        align-items: center;
                     }
-                    .tripName{
-                        height: 60px;
-                    }
-                    .tripPicture{
-                        img{
-                            width:100%;
+                    .wrapTrip{
+                        width: 30%;
+                        //border:1px solid #f8b600;
+                        padding:10px 0;
+                        margin: 0 10px;
+
+                        @media screen and (max-width: 990px){
+                            width: 50%;
+                        }
+                        .tripName{
+                            height: 60px;
+                        }
+                        .tripPicture{
+                            img{
+                                width:100%;
+                            }
+                        }
+                        .tripUnitPrice{
+                            margin:15px 0;
                         }
                     }
-                    .tripUnitPrice{
-                        margin:15px 0;
-                    }
                 }
-            }
+            }    
         }
 
     }
 }
 
-.show{
-    display: block;
-}
+//.show{
+    //display: block;
+    //display: none;
+//}
 .hide{
     display: none;
 }
+
 
 
 //------------PACKAGE PAGE --------------

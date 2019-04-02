@@ -89,21 +89,21 @@
         <!-- new block here vue -->
         <div id="main" class="bookingsVue">
 
-            <div class="wrapperCountries">
-                <!-- <div class="but fr textMedium" data-filter="All" @click="filter()">All</div> -->
-                <div class="but fr textBlue">France</div>
-                <div class="but sp textBlue">Spain</div>
-                <div class="but bel textBlue">Belgium</div>
+            <div class="wrapperCountries" @click="showBlock()">
+                <div class="but fr textBlue" @click="filter('France')">France</div>
+                <div class="but sp textBlue" @click="filter('Spain')">Spain</div>
+                <div class="but bel textBlue" @click="filter('Belgium')">Belgium</div>
             </div>
 
-            <div class="wrapperCountryTrips">
+            <!-- 'hide'=true // @click => 'hide':false -->
+            <div class="wrapperCountryTrips" :class="{'hide': hideValue}">
                         
-                <!-- loop -->
-                <div class="trip france">
-                    <div class="selection textSmallBlack">You've chosen : countryName</div>
+                <!-- loop : 3 countries-->
+                <div class="trip france" :data-countryName="t.countryName" v-for="(t, index) in hollys" :key="index">
+                    <div class="selection textSmallBlack">You've chosen : {{t.countryName}}</div>
                     <div class="textSmallBlack">There are 3 city-trips available there !</div>
                     <div class="textMedium peopleTitle">How many people will take the trip ?</div>
-                    <select class="passangers" id="passangers">
+                    <select class="passangers" id="passangers" @change="showSel()">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -111,55 +111,40 @@
                         <option value="4">4</option>
                     </select>
 
-                    <div class="cart">
-                        <div class="blockBlue">
-                            <div class="textSmallWhiteT">Your cart </div>
-                            <div class="textSmallWhite">"...trips..."</div>
-                        </div>
-                    </div>
+                    <!-- 'hide'=true // @change => 'hide':false -->
+                    <div class="hiderSelect" :class="{'hide': popValue}">
 
-                    <div class="flexer">
-                        <!-- inner-LOOP -->
-
-                        <!-- france trip1 -->
-                        <div class="wrapTrip tripOne">
-                            <div class="tripName textSmallBlackT">tripName</div>
-                            <div class="tripPicture">
-                                    <img src="tripPicture" alt="picture-trip">
+                        <div class="cart">
+                            <div class="blockBlue">
+                                <div class="textSmallWhiteT">Your cart </div>
+                                <div class="textSmallWhite">"addTitle"</div>
                             </div>
-                            <div class="tripUnitPrice textMediumS">tripUnitPrice €<span class="textSmallBlackT"> p/p</span></div>
-                            <div class="buttonBlue">Add to cart</div>
                         </div>
-                        <!-- END inner-LOOP -->
 
-                         <!-- france trip2 -->
-                         <div class="wrapTrip tripOne">
-                                <div class="tripName textSmallBlackT">Lovers Week-end in Paris</div>
+                        <div class="flexer" >
+
+                            <!-- inner-LOOP : 3 trips of one country -->
+                            <div class="wrapTrip tripOne" id="t.countryId" v-for="(b, i) in t.trips" :key="i">
+                                <div class="tripName textSmallBlackT">{{b.tripName}}</div>
                                 <div class="tripPicture">
-                                        <img src="img/b1.jpg" alt="picture-trip">
+                                        <img :src="b.tripPicture" alt="picture-trip">
                                 </div>
-                                <div class="tripUnitPrice textMediumS">225€ <span class="textSmallBlackT"> p/p</span></div>
+                                <div class="tripUnitPrice textMediumS">{{b.tripUnitPrice}}€<span class="textSmallBlackT"> p/p</span></div>
                                 <div class="buttonBlue">Add to cart</div>
                             </div>
-
-                             <!-- france trip3 -->
-                        <div class="wrapTrip tripOne">
-                                <div class="tripName textSmallBlackT">Lovers Week-end in Paris</div>
-                                <div class="tripPicture">
-                                        <img src="img/b1.jpg" alt="picture-trip">
-                                </div>
-                                <div class="tripUnitPrice textMediumS">225€<span class="textSmallBlackT"> p/p</span></div>
-                                <div class="buttonBlue">Add to cart</div>
-                            </div>
+                            <!-- END inner-LOOP -->
+                        </div>
+                    
+                        <div class="total">
+                            <h3 class="textMedium">You'll pay <span class="blue">"totalPrice"</span></h3>
+                        </div>
 
                     </div>
-
-                    <div class="total">
-                        <h3 class="textMedium">You'll pay <span class="blue">totalPrice ...€</span></h3>
-                    </div>
-                </div>
+                    <!-- en "hider" -->
+                    
+                   </div>
                 <!-- end-loop -->
-
+            
             </div>    
 
             <!-- end div bookingVue  -->
